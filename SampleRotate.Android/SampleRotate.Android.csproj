@@ -25,7 +25,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
     <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -36,7 +35,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
-    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -70,7 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SampleRotate.Core\SampleRotate.Core.csproj">
-      <Project>{151ea88c-fd6e-4d6f-9698-b86fedec7dff}</Project>
+      <Project>{151EA88C-FD6E-4D6F-9698-B86FEDEC7DFF}</Project>
       <Name>SampleRotate.Core</Name>
     </ProjectReference>
   </ItemGroup>
