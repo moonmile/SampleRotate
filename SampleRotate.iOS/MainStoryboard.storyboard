@@ -12,7 +12,7 @@
                         <viewControllerLayoutGuide type="top" id="Trx-GZ-SpE"/>
                         <viewControllerLayoutGuide type="bottom" id="Wrb-MG-vLQ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" tag="100" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -135,7 +135,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEp-F0-QfS">
-                                <rect key="frame" x="20" y="109" width="280" height="21"/>
+                                <rect key="frame" x="20" y="109" width="99" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -161,7 +161,7 @@
                         <outlet property="textID" destination="w94-m8-Rkj" id="Ezl-KO-od3"/>
                         <outlet property="textRank" destination="dtn-2L-TtK" id="0FE-rE-5Ct"/>
                         <outlet property="textScore" destination="Syd-tp-6Ze" id="lyu-VS-0YB"/>
-                        <outlet property="textUserName" destination="bEp-F0-QfS" id="GkX-jv-hM3"/>
+                        <outlet property="textUserName" destination="RpY-nw-7oW" id="Hjd-Ax-D0f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9I4-zr-NYb" userLabel="First Responder" sceneMemberID="firstResponder"/>

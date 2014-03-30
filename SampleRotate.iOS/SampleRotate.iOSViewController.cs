@@ -20,15 +20,6 @@ namespace SampleRotate.iOS
 			base.DidReceiveMemoryWarning ();
 			
 			// Release any cached data, images, etc that aren't in use.
-            // データ
-            _model = new DataModel
-            {
-                ID = "X20140330",
-                UserName = "Tomoaki",
-                Score = 100,
-                Rank = 10
-            };
-            UpdateData();
         }
 
 		#region View lifecycle
@@ -38,6 +29,15 @@ namespace SampleRotate.iOS
 			base.ViewDidLoad ();
 			
 			// Perform any additional setup after loading the view, typically from a nib.
+			// データ
+			_model = new DataModel
+			{
+				ID = "X20140330",
+				UserName = "Tomoaki",
+				Score = 100,
+				Rank = 10
+			};
+			UpdateData();
 		}
 
 		public override void ViewWillAppear (bool animated)
@@ -66,20 +66,16 @@ namespace SampleRotate.iOS
 		public override void AwakeFromNib ()
 		{
 			base.AwakeFromNib ();
-
-			/*
-			isShowingLandscaeView = NO ;
-			[[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
-			[[NSNotificationCenter defaultCenter] addObserver:self
-				selector:@selector(orientationChanged:)
-				name:UIDeviceOrientationDidChangeNotification
-				object:nil];
-				*/
-			this.isShowingLandscaeView = false;
-			UIDevice.CurrentDevice.BeginGeneratingDeviceOrientationNotifications ();
-			NSNotificationCenter.DefaultCenter.AddObserver (
-				"UIDeviceOrientationDidChangeNotification",
-				orientationChanged);
+			// main view only 
+			if (this.View.Tag == 100) {
+				// main view only,
+				// set to main view's tag 100.
+				this.isShowingLandscaeView = false;
+				UIDevice.CurrentDevice.BeginGeneratingDeviceOrientationNotifications ();
+				NSNotificationCenter.DefaultCenter.AddObserver (
+					"UIDeviceOrientationDidChangeNotification",
+					orientationChanged);
+			}
 		}
 		void orientationChanged( NSNotification obj ) 
 		{
