@@ -1,0 +1,5 @@
+﻿<Model:DataModel xmlns:Model="using:SampleRotate.Core.Model" 
+                 ID="XXXXXXXX" 
+                 Rank="9999" 
+                 Score="9999" 
+                 UserName="XXXXXXXX XXXXXXXX"/>

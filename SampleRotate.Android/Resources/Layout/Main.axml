@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:text="Sample Rotate"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout1">
+        <TableRow
+            android:id="@+id/tableRow1">
+            <TextView
+                android:text="ID"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="0"
+                android:id="@+id/textView11" />
+            <TextView
+                android:text="XXXXXXXX"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textViewID" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2">
+            <TextView
+                android:text="UserName"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="0"
+                android:id="@+id/textView12"
+                android:layout_marginRight="33.1dp" />
+            <TextView
+                android:text="Sample Name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textViewUserName" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3">
+            <TextView
+                android:text="Score"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="0"
+                android:id="@+id/textView13" />
+            <TextView
+                android:text="9999"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textViewScore" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4">
+            <TextView
+                android:text="Rank"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView14" />
+            <TextView
+                android:text="9999"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textViewRank" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
