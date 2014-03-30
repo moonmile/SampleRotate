@@ -2,6 +2,7 @@
 using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using SampleRotate.Core.Model;
 
 namespace SampleRotate.iOS
 {
@@ -11,13 +12,24 @@ namespace SampleRotate.iOS
 		{
 		}
 
-		public override void DidReceiveMemoryWarning ()
+        private DataModel _model;
+        
+        public override void DidReceiveMemoryWarning()
 		{
 			// Releases the view if it doesn't have a superview.
 			base.DidReceiveMemoryWarning ();
 			
 			// Release any cached data, images, etc that aren't in use.
-		}
+            // データ
+            _model = new DataModel
+            {
+                ID = "X20140330",
+                UserName = "Tomoaki",
+                Score = 100,
+                Rank = 10
+            };
+            UpdateData();
+        }
 
 		#region View lifecycle
 
@@ -86,6 +98,18 @@ namespace SampleRotate.iOS
 				}
 			}
 		}
+
+        /// <summary>
+        /// 手動でバインド
+        /// </summary>
+        private void UpdateData()
+        {
+            this.textID.Text = _model.ID;
+            this.textUserName.Text = _model.UserName;
+            this.textScore.Text = _model.Score.ToString();
+            this.textRank.Text = _model.Rank.ToString();
+        }
+
 	}
 }
 
